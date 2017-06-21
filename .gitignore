@@ -1,0 +1,5 @@
+.DS_Store
+node_modules
+categories.db
+foodItems.db
+recipes.db
