@@ -47,7 +47,7 @@
         };
 
         self.addRecipeIngredient = function (recipe) {
-            var ingredient = {"foodItem":"","condition":"","amount":""};
+            var ingredient = {"foodItem":"CHOOSE","condition":"","amount":""};
             recipe.ingredients.push(ingredient);
         };
 

@@ -110,9 +110,9 @@
   <div class="ingredient-row" ng-repeat="ingredient in ctrl.recipe.ingredients">
     <div class="prefix-20 grid-30">
       <p>
-        <select ng-model="ingredient.name">
-          <option value="" >Select Item</option>
-          <option ng-repeat="item in ctrl.items" value="{{item._id}}" ng-selected="item.name === ingredient.foodItem">{{item.name}}</option>
+        <select ng-model="ingredient.foodItem">
+          <option value="CHOOSE">Select an Item</option>
+          <option ng-repeat="item in ctrl.items" value="{{item.name}}" ng-selected="item.name == ingredient.foodItem">{{item.name}}</option>
         </select>
       </p>
     </div>
